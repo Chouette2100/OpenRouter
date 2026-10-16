@@ -63,3 +63,23 @@ systemlist:
       minetest-serverをNixOSで起動することによってLuanti - Minecloniaを遊んでいます。
       enable_damage = false, creative_mode = trueとして、建築を楽しんでいます。
       modはworldedit等を使っています。red stoneによる自動化や遠隔操作にも興味があります。
+
+modellist:
+    - name: deepseek/deepseek-v4.1-flash
+      vendor: DeepSeek
+      comment: 高速/安定
+    - name: openai/gpt-4o-mini
+      vendor: OpenAI
+      comment: 軽量
+    - name: openai/gpt-4.1-mini
+      vendor: OpenAI
+      comment: バランス
+    - name: anthropic/claude-3.5-sonnet
+      vendor: Anthropic
+      comment: 長文
+    - name: google/gemini-3.1-flash-lite
+      vendor: Google
+      comment: 高速
+    - name: meta-llama/llama-3.3-70b-instruct
+      vendor: Meta
+      comment: 汎用
