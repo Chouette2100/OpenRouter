@@ -105,7 +105,7 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	tpl, err := template.ParseFiles("login.gtpl")
+	tpl, err := template.ParseFiles("templates/login.gtpl")
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return

@@ -215,7 +215,7 @@ func openrouterHandler(w http.ResponseWriter, r *http.Request) {
 		"TimeToStringY": func(t time.Time) string { return t.Format("06-01-02 15:04") },
 		"msToSeconds":   func(n int64) float64 { return float64(n) / 1000.0 },
 	}
-	tpl, err := template.New("openrouter.gtpl").Funcs(funcMap).ParseFiles("openrouter.gtpl")
+	tpl, err := template.New("templates/openrouter.gtpl").Funcs(funcMap).ParseFiles("templates/openrouter.gtpl")
 	if err != nil {
 		log.Printf("template parse error: %v", err)
 		http.Error(w, err.Error(), http.StatusInternalServerError)
